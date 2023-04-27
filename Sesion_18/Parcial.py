@@ -143,13 +143,13 @@ def facturar(data):
     return carrito
                 
 def imprimir(carrito):
-    titulos=['Bebidas ...','Condimentos','Lácteos ...']
+    titulos=['Bebidas ....','Condimentos ','Lácteos ....']
     venta=0
     total=0
 
-    print('\n---------------------------------')
-    print('-------Super Max Economico ------')
-    print('---------------------------------\n')
+    print('\n----------------------------------')
+    print('-------Super Max Economico -------')
+    print('----------------------------------\n')
     print('Categoria   Cantidad    Precio Acu')
     for i in range(3):
         for j in carrito[i]:
@@ -157,9 +157,9 @@ def imprimir(carrito):
             # print(j)
             # x=input('x')
         venta+=total
-        print( f'{titulos[i]} .... {len(carrito[i])}.......{total}USD')
+        print( f'{titulos[i]}.... {len(carrito[i])}...... {total}USD')
         total=0
-    print(f'venta total: ............{round(venta,2)}USD\n')
+    print(f'venta total: ........... {round(venta,2)}USD\n')
 
 def main():
     data=lectura()
